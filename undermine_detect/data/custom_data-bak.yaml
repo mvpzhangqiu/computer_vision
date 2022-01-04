@@ -1,0 +1,31 @@
+# Custom data for safety helmet
+
+
+## train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+#train: ./Dataset/Safety_Helmet_Train_dataset/score/images/train
+#val: ./Dataset/Safety_Helmet_Train_dataset/score/images/val
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: [
+    /home/zq/work/data/underground_mine/meibi/train/images/,
+    /home/zq/work/data/underground_mine/YM_1-5900/train/images/,
+    /home/zq/work/data/underground_mine/zoudao/train/images/,
+#    /home/zq/work/data/underground_mine/without_helmet/mine/train/images,  # helmet_without mine data
+#    /home/Q9/zq/work/data/underground_mine/without_helmet/merge/train/images,  # helmet_without faked data
+#    /home/zq/work/data/underground_mine/Safety_Helmet_Train_dataset/train/images/,  # helmet_with open data
+]
+val: [
+    /home/zq/work/data/underground_mine/meibi/val/images/,
+    /home/zq/work/data/underground_mine/YM_1-5900/val/images/,
+    /home/zq/work/data/underground_mine/zoudao/val/images/,
+#    /home/zq/work/data/underground_mine/without_helmet/mine/val/images,  # helmet_without mine data
+#    /home/zq/work/data/underground_mine/without_helmet/merge/val/images,   # helmet_without faked data
+#    /home/zq/work/data/underground_mine/Safety_Helmet_Train_dataset/val/images/,  # helmet_with_without open data
+]
+
+# number of classes
+nc: 9
+
+# class names
+names: ['helmet_yes', 'helmet_no', 'person', 'coalcutter', 'coalcutter_roller', 'foreign_matter', 'emergency_box', 'scraper', 'pilot valve']
+
